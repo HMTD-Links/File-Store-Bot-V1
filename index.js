@@ -36,7 +36,9 @@ bot.start(async(ctx)=>{
     //welcoming message on /start and if there is a query available we can send files
 
     if(length == 1){
-        ctx.reply(`<b>I will store files for you and give sharable links .I can also make the files available for all users</b>`,{
+        ctx.reply(`<b>Hi👋 Bro...
+I'm an HMTD Official File Store Bot Maintained by @HMTD_Links.
+Keep me Join to Our Official Channel to Receive Bot & Movies Updates in @HMTD_Links.</b>`,{
             parse_mode:'HTML',
             reply_markup:{
                 inline_keyboard:[
