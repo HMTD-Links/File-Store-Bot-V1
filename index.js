@@ -36,11 +36,8 @@ bot.start(async(ctx)=>{
     //welcoming message on /start and if there is a query available we can send files
 
     if(length == 1){
-        ctx.reply(`<b>Hello...
-
-I'm an HMTD Official File Store Bot 
-
-Maintained by @HMTD_Links. I will Store Files for you and Give Sharable Links. Keep me Join to Our Official Channel to Receive Bot & Movies Updates in @HMTD_Links.</b>`,{
+        ctx.reply(`<b>Hi👋 Bro...
+I'm an HMTD Official File Store Bot Maintained by @HMTD_Links. I will Store Files for you and Give Sharable Links. Keep me Join to Our Official Channel to Receive Bot & Movies Updates in @HMTD_Links.</b>`,{
             parse_mode:'HTML',
             reply_markup:{
                 inline_keyboard:[
@@ -70,22 +67,22 @@ Maintained by @HMTD_Links. I will Store Files for you and Give Sharable Links. K
 //DEFINING POP CALLBACK
 bot.action('POP',(ctx)=>{
     ctx.deleteMessage()
-    ctx.reply('send me a file')
+    ctx.reply('<b>Send Me a File📂 Then See The Magic✨</b>')
 })
 
 //help
 
 bot.command('/help',(ctx)=>{
-    ctx.reply(`Hello <b>${ctx.from.first_name}</b> you can send me files and i will store and share link for that file to be used inside telegram\nYou can also use me for searching files contributed by various users\n\n(<code>Consider this as an initial version after fixing certain bugs we will make this bot opensource</code>)`,{
+    ctx.reply(`Hello <b>${ctx.from.first_name}</b> you Can Send me Files and I will Store and Share Link for that File to be used inside Telegram\nYou can also use me for searching Files contributed by various users\n\n(<b>🚨 Porn Contents will be gives you PERMANENT BAN 🚨</b>)`,{
         parse_mode:'HTML',
         reply_markup:{
             inline_keyboard:[
-                [{text:'🎲Clone',url:'t.me/filesaverhelp'}]
+                [{text:'FeedBack',url:'t.me/HMTD_Feedback_Bot'}]
             ]
         }    
     })
     if(ctx.from.id==process.env.ADMIN){
-        ctx.reply('https://telegra.ph/Filesaver-Admin-commands-06-05')
+        ctx.reply('https://t.me/HMTD_Links')
     }
 })
 
