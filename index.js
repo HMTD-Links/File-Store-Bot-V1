@@ -73,7 +73,7 @@ bot.action('POP',(ctx)=>{
 //help
 
 bot.command('/help',(ctx)=>{
-    ctx.reply(`Hello <b>${ctx.from.first_name}</b> you Can Send me Files and I will Store and Share Link for that File to be used inside Telegram\nYou can also use me for searching Files contributed by various users\n\n(<b>🚨 Porn Contents will be gives you PERMANENT BAN 🚨</b>)`,{
+    ctx.reply(`Hello <b>${ctx.from.first_name}</b> <b>you Can Send me Files and I will Store and Share Link for that File to be used inside Telegram\nYou can also use me for searching Files contributed by various users\n\n</b> <b>🚨 Porn Contents will be Gives You PERMANENT BAN 🚨</b>`,{
         parse_mode:'HTML',
         reply_markup:{
             inline_keyboard:[
@@ -308,7 +308,7 @@ bot.on('audio', async(ctx) => {
 bot.command('stats',async(ctx)=>{
     stats = await saver.getUser().then((res)=>{
         if(ctx.from.id==process.env.ADMIN){
-            ctx.reply(`📊Total user: <b> ${res.length}</b>`,{parse_mode:'HTML'})
+            ctx.reply(`<b>📊Total Subscribers:</b> <b> ${res.length}</b>`,{parse_mode:'HTML'})
         }
         
     })
