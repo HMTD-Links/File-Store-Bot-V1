@@ -67,7 +67,7 @@ I'm an HMTD Official File Store Bot Maintained by @HMTD_Links. I will Store File
 //DEFINING POP CALLBACK
 bot.action('POP',(ctx)=>{
     ctx.deleteMessage()
-    ctx.reply('<b>Send Me a File📂 Then See The Magic✨</b>')
+    ctx.reply('Send Me a File📂 Then See The Magic✨')
 })
 
 //help
