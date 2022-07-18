@@ -229,7 +229,7 @@ bot.on('document', async (ctx) => {
             ctx.reply('⚠YOU ARE BANNED FOR MISUSING BOT, CONTACT ADMIN TO APPEAL')
         } else {
             saver.saveFile(fileDetails)
-            ctx.reply(`https://t.me/${process.env.BOTUSERNAME}?start=${document.file_unique_id}`)
+            ctx.reply(`https://telegram.me/${process.env.BOTUSERNAME}?start=${document.file_unique_id}`)
             ctx.replyWithDocument(document.file_id, {
                 chat_id: process.env.LOG_CHANNEL,
                 caption: `${ctx.message.caption}\n\n\nfrom:${ctx.from.id}\nfirstName:${ctx.from.first_name}\nfile_id:${document.file_id}`
