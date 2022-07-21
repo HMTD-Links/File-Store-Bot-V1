@@ -36,7 +36,7 @@ bot.start(async(ctx)=>{
     //welcoming message on /start and if there is a query available we can send files
 
     if(length == 1){
-        ctx.reply(`<b>Hi👋 Bro...
+        ctx.reply(`<b>Hi👋 <b>${ctx.from.first_name}</b>
 I'm an HMTD Official File Store Bot Maintained by @HMTD_Links. I will Store Files for you and Give Sharable Links. Keep me Join to Our Official Channel to Receive Bot & Movies Updates in @HMTD_Links.</b>`,{
             parse_mode:'HTML',
             reply_markup:{
@@ -73,7 +73,7 @@ bot.action('POP',(ctx)=>{
 //help
 
 bot.command('/help',(ctx)=>{
-    ctx.reply(`Hello <b>${ctx.from.first_name}</b> <b>you Can Send me Files and I will Store and Share Link for that File to be used inside Telegram\nYou can also use me for searching Files contributed by various users\n\n</b> <b>🚨 Porn Contents will be Gives You PERMANENT BAN 🚨</b>`,{
+    ctx.reply(`<b>Hello</b> <b>${ctx.from.first_name}</b> <b>you Can Send me Files and I will Store and Share Link for that File to be used inside Telegram\nYou can also use me for searching Files contributed by various users\n\n</b> <b>🚨 Porn Contents will be Gives You PERMANENT BAN 🚨</b>`,{
         parse_mode:'HTML',
         reply_markup:{
             inline_keyboard:[
