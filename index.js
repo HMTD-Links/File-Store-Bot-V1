@@ -73,11 +73,11 @@ bot.action('POP',(ctx)=>{
 //help
 
 bot.command('/help',(ctx)=>{
-    ctx.reply(`<b>Hello</b> <b>${ctx.from.first_name}</b> <b>you Can Send me Files and I will Store and Share Link for that File to be used inside Telegram\nYou can also use me for searching Files contributed by various users\n\n</b> <b>🚨 Porn Contents will be Gives You PERMANENT BAN 🚨</b>`,{
+    ctx.reply(`<b>Hello👋</b> <b>${ctx.from.first_name}</b> <b>you Can Send me Files and I will Store and Share Link for that File to be used inside Telegram\nYou can also use me for searching Files contributed by various users\n\n</b> <b>🚨 Porn Contents will be Gives You PERMANENT BAN 🚨</b>`,{
         parse_mode:'HTML',
         reply_markup:{
             inline_keyboard:[
-                [{text:'FeedBack',url:'t.me/HMTD_Feedback_Bot'}]
+                [{text:'🤖 Bot Updates',url:'t.me/HMTD_Links'}]
             ]
         }    
     })
