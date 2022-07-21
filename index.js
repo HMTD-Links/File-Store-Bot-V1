@@ -73,7 +73,8 @@ bot.action('POP',(ctx)=>{
 //help
 
 bot.command('/help',(ctx)=>{
-    ctx.reply(`<b>Hello👋</b> <b>${ctx.from.first_name}</b> <b>you Can Send me Files and I will Store and Share Link for that File to be used inside Telegram\nYou can also use me for searching Files contributed by various users\n\n</b> <b>🚨 Porn Contents will be Gives You PERMANENT BAN 🚨</b>`,{
+    ctx.reply(`<b>Hello👋</b> <b>${ctx.from.first_name}</b>
+<b>you Can Send me Files and I will Store and Share Link for that File to be used inside Telegram\nYou can also use me for searching Files contributed by various users\n\n</b> <b>🚨 Porn Contents will be Gives You PERMANENT BAN 🚨</b>`,{
         parse_mode:'HTML',
         reply_markup:{
             inline_keyboard:[
@@ -155,7 +156,7 @@ bot.command('send',async(ctx)=>{
 
                 }
             }
-            ctx.reply(`<b>✅Total active users :</b>${userId.length - totalFail.length}\n❌<b>Total failed broadcast:</b>${totalFail.length}`,{
+            ctx.reply(`<b>✅Total Active Users :</b>${userId.length - totalFail.length}\n❌<b>Total failed broadcast:</b>${totalFail.length}`,{
                 parse_mode:'HTML'
             })
 
